@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
     ]),
+    HeroesModule,
   ],
   declarations: [
     AppComponent,
